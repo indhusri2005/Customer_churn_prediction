@@ -55,6 +55,3 @@ The run creates:
 
 Open `notebooks/data_quality_and_eda.ipynb` from the project root. It summarizes source data, data-quality results, churn prevalence, validation metrics and segment patterns. The notebook reads the same data and outputs as the reproducible analysis script.
 
-## Presentation
-
-`reports/presentation_outline.md` provides a 10-15 minute slide-by-slide presentation outline and speaker notes. The Python script generates the charts used in the presentation under `outputs/charts/`.
