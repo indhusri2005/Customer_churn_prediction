@@ -1,0 +1,12 @@
+{
+  "scenario": "For the top-quartile validation risk group, increase recent promotion transaction share by 0.15 (capped at 1.0) and recent coupon redemptions by 1 per month.",
+  "targeted_customers": 211,
+  "targeted_share": 0.25029655990510086,
+  "targeted_baseline_mean_risk": 0.755622345608175,
+  "targeted_scenario_mean_risk": 0.63102426279546,
+  "targeted_mean_risk_change": -0.12459808281271495,
+  "all_validation_baseline_mean_risk": 0.2880711429877588,
+  "all_validation_scenario_mean_risk": 0.2568846714889654,
+  "all_validation_mean_risk_change": -0.03118647149879342,
+  "interpretation": "Associational model counterfactual only; it is not evidence that coupons cause churn reduction. A randomized pilot is required to estimate treatment effect."
+}

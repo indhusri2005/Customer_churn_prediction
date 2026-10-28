@@ -1,0 +1,16 @@
+{
+  "activity_conflicting_duplicate_keys": 2,
+  "observation_cutoff": "2024-03-01",
+  "label_window_start": "2024-04-01",
+  "label_window_end": "2024-06-30",
+  "spend_clip_quantile": 0.99,
+  "random_state": 42,
+  "selected_model_by_validation_pr_auc": "Random forest (all features)",
+  "train_customers": 1384,
+  "validation_customers": 843,
+  "train_churn_rate": 0.35332369942196534,
+  "validation_churn_rate": 0.20521945432977462,
+  "excluded_insufficient_or_mismatched_labels": 373,
+  "validation_method": "Signup-cohort holdout: signups before 2023-01-01 train; signups on/after 2023-01-01 validate.",
+  "feature_cutoff": "2024-03-31; only Jan 2023-Mar 2024 activity is used."
+}

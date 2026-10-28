@@ -1,0 +1,22 @@
+check,count,handling
+Customer profile rows,2608,Original profile table row count.
+Unique customers in profile,2600,Expected one row per customer.
+Exact duplicate profile rows,8,Removed before joining.
+Duplicate profile customer keys,16,Repeated key rows; deduplicated to one profile.
+Monthly activity rows,28073,Original monthly table row count.
+Exact duplicate activity rows,58,Removed before monthly-key deduplication.
+Duplicate customer-month keys,120,Resolved to one record per customer-month.
+Conflicting duplicate customer-month groups,2,Prefer nonnegative-spend copy for duplicated records.
+Negative spend rows,24,Set negative spend to zero after resolving duplicate sign-flip copies.
+Zero-spend rows,2355,Retained; zero spend is valid for no-purchase months.
+Zero-transaction rows,2335,Checked against spend and labels.
+Zero transactions with positive spend,0,Potential transaction/spend inconsistency.
+Positive transactions with nonpositive spend,44,Potential transaction/spend inconsistency; negative/zero spend retained as zero.
+Monthly spend outliers (IQR rule),673,Raw positive spend above $381.84; model input clipped at raw positive 99th percentile.
+Unrecorded customer-months through Mar 2024,26138,"Expected from signup month through the pre-label cutoff; treated as zero recorded activity in features, not asserted to be data loss."
+Missing AGE values,78,Imputed inside model pipelines.
+Missing GENDER values,52,Imputed as most frequent category inside model pipelines.
+Missing HOME_STORE_PRICE_TIER values,130,Imputed as most frequent category inside model pipelines.
+Duplicate churn-label rows,5,Removed before joining.
+Insufficient-history customers,373,Excluded from model fitting and validation.
+Churn-label mismatches among adequate-history customers,0,Flagged and excluded from supervised fitting; provided label otherwise retained.
